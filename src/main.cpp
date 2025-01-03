@@ -101,6 +101,25 @@ int main(int argc, char *argv[])
 {
     std::string input_path;
 
+    // Check for help argument
+    if (argc > 1 && (std::string(argv[1]) == "-h" || std::string(argv[1]) == "--help"))
+    {
+        std::cout << "ByteForge - File to C/C++ Header Converter\n\n"
+                  << "Usage:\n"
+                  << "  ByteForge <input_file> [output_file.h]\n"
+                  << "  ByteForge -h | --help\n\n"
+                  << "Arguments:\n"
+                  << "  input_file      Path to the file to convert\n"
+                  << "  output_file.h   Optional output header file path\n"
+                  << "                  (default: input_file_name.h)\n\n"
+                  << "Options:\n"
+                  << "  -h, --help      Show this help message\n\n"
+                  << "Example:\n"
+                  << "  ByteForge image.png\n"
+                  << "  ByteForge data.bin custom_name.h\n";
+        return 0;
+    }
+
     if (argc > 1)
     {
         input_path = argv[1];
