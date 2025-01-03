@@ -22,6 +22,12 @@
             "displayName": "Visual Studio Build Tools 2019 Release - amd64 - Debug",
             "configurePreset": "win-64",
             "configuration": "Debug"
+        },
+        {
+            "name": "win-64-release",
+            "displayName": "Visual Studio Build Tools 2019 Release - amd64 - Release",
+            "configurePreset": "win-64",
+            "configuration": "Release"
         }
     ]
 }
