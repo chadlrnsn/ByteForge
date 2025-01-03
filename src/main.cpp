@@ -55,6 +55,9 @@ bool convertToByteCode(const std::string &input_path, std::string output_path = 
         return false;
     }
 
+    // Write header guard
+    output << "#pragma once\n\n";
+
     // Write array declaration
     std::string array_name = std::filesystem::path(input_path).filename().stem().string() + "_data";
     // Remove all characters except letters, numbers and underscores
