@@ -1,0 +1,31 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source files
+*.cpp text diff=cpp
+*.h text diff=cpp
+*.hpp text diff=cpp
+*.c text diff=cpp
+*.cc text diff=cpp
+*.cxx text diff=cpp
+
+# CMake files
+CMakeLists.txt text
+*.cmake text
+*.json text
+
+# Documentation
+*.md text diff=markdown
+*.txt text
+LICENSE text
+
+# Git files
+.gitattributes text
+.gitignore text
+
+# Binary files
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.bin binary 

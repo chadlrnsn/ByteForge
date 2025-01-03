@@ -1,0 +1,23 @@
+# Ignore build directories
+bin
+out
+
+# Ignore build files
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.lib
+
+# Ignore build artifacts
+*.exe
+*.out
+*.obj
+*.map
+
+# Ignore VSCode files
+.vscode/
+
+# Ignore Visual Studio files
+.vs/
